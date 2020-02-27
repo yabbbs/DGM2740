@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unit 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* areas to show objectives */
+.example-container {
+  width: 95%;
+  min-height: 200px;
+  background-color: #F0F0F0;
+  padding: 5px;
+  margin: 10px;
+}
+
+.example-container .implementationOfConceptOne{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .example-container {
+    height: auto;
+}
+
+  .example-container .implementationOfConceptOne{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+}
+
+/* Boxes for media queries */
+.mediaBox {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#">Main Github account</a>
+  <a href="#">LinkedIn</a>
+  <a href="#">Portfolio</a>
+</div>
+
+<div class="content">
+  <h2>UNIT 2</h2>
+  <p>OBJECTIVES</p>
+  <ul>
+    <li>Incorporate a css preprocessor into your work flow</li>
+    <li>Practice using wrappers</li>
+    <li>Build a logo</li>
+    <li>Demonstrate SCSS Partials/Imports</li>
+    <li>Demonstrate SCSS Nesting</li>
+    <li>Demonstrate SCSS Variables</li>
+    <li>Practice design skills.</li>
+  </ul>
+
+  <div class="example-container">
+    <h4>Incorporate a css preprocessor into your work flow</h4>
+    <section class='implementationOfConceptOne'>
+      <p>view this link to my github account to see example of using sass, also have used emotion.</p>
+      <a href='https://github.com/yabbbs/sogol-clone/tree/master/src/sass'>GITHUB ACCOUNT</a>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Practice using wrappers</h4>
+    <section class='implementationOfConceptOne'>
+      <h5>View this HTML file to see Implementation of wrappers</h5>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Build a logo</h4>
+    <section class='implementationOfConceptOne'>
+      <p>view this link to my github account to see my build of a logo with photoshop</p>
+      <a href='https://github.com/yabbbs/sogol-clone/blob/master/src/assets/logo.png'>GITHUB ACCOUNT</a>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Demonstrate SCSS Partials/Imports</h4>
+    <section>
+      <p>view this link to my github account to see my partial imports. Line 1, 3, and 5</p>
+      <a href='https://github.com/yabbbs/sogol-clone/blob/master/src/comps/Home.js'>GITHUB ACCOUNT</a>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <p>media queries: packages/kpi/src/styles.ts</p>
+    <h4>Demonstrate SCSS Nesting</h4>
+    <section class='implementationOfConceptTwo'>
+      <p>look at line 64 of this index.html doc</p>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <p>media queries: packages/kpi/src/styles.ts</p>
+    <h4>>Demonstrate SCSS Variables</h4>
+    <section>
+      <p>have variables in work repo</p>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Practice design skills</h4>
+    <section class='implementationOfConceptTwo'>
+      <p>view this link to my github account to see example of my design skills</p>
+      <a href='https://github.com/yabbbs/sogol-clone/tree/master/src/sass'>GITHUB ACCOUNT</a>
+    </section>
+  </div>
+
+</div>
+
+</body>
+</html>

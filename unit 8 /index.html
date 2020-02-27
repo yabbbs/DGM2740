@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unit 8</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/6238ea7777.js" crossorigin="anonymous"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 17px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+.implementationOfConceptOne {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.implementationOfConceptOne div{
+  height: 20px;
+  width: 100%;
+  background-color: orange;
+}
+
+#page-nav label {
+    display: inline-block;
+    color: black;
+    /* background: #a02620; */
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 50px;
+    cursor: pointer;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+  #page-nav ul li {
+    /* border-top: 1px solid #333; */
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+
+  .content{
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    top: 30px;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+
+</style>
+</head>
+<body>
+
+
+<nav id="page-nav">
+  <!-- [THE HAMBURGER] -->
+  <label for="hamburger">&#9776;</label> 
+  <input type="checkbox" id="hamburger"/>
+
+  <!-- [MENU ITEMS] -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tech.html">Tech</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h2>UNIT 8</h2>
+  <p>OBJECTIVES</p>
+  <ul>
+    <li>Implement Hamburger Navigation</li>
+    <li>Implement CSS Grids</li>
+  </ul>
+
+  <div class="example-container">
+    <h4>Implement Hamburger Navigation</h4>
+    <p>packages/work/sidebar/index</p>
+    <section class='implementationOfConceptOne'> 
+      
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Implement CSS Grids</h4>
+    <p>packages/shared-components/src/components/card-layout/styles</p>
+    <section class='implementationOfConceptOne'> 
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unit 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* areas to show objectives */
+.example-container {
+  width: 95%;
+  min-height: 200px;
+  background-color: #F0F0F0;
+  padding: 5px;
+  margin: 10px;
+}
+
+.example-container .implementationOfConceptOne{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .example-container {
+    height: auto;
+}
+
+  .example-container .implementationOfConceptOne{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+}
+
+/* Boxes for media queries */
+.mediaBox {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#">Link1</a>
+  <a href="#">Link2</a>
+  <a href="#">Link3</a>
+  <a href="#">Link4</a>
+</div>
+
+<div class="content">
+  <h2>UNIT 1</h2>
+  <p>OBJECTIVES</p>
+  <ul>
+    <li>Implement multiple style sheets including Normalize</li>
+    <li>Add Media Queries to style sheets</li>
+    <li>Practice using HTML5 semantic element</li>
+    <li>Implement wayfinding</li>
+    <li>Demonstrate design principles (Contrast, Proximity, Alignment, Hierachy, Wayfinding)</li>
+    <li>Create a scaling image</li>
+    <li>Build newspaper columns</li>
+    <li>Create a start file with the appropiate parts.</li>
+  </ul>
+
+  <div class="example-container">
+    <p>media queries: packages/kpi/src/styles.ts</p>
+    <h4>Add Media Queries to style sheets. Shrink page to see it become responsive. Boxes will stack.</h4>
+    <section class='implementationOfConceptOne'>
+      <div class="mediaBox"></div>
+      <div class="mediaBox"></div>
+      <div class="mediaBox"></div>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Practice using HTML5 semantic element</h4>
+    <section class='implementationOfConceptOne'>
+      <h5>View this HTML file to see Semantic HTML</h5>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Implement wayfinding</h4>
+    <h5>View this HTML file to see wayfinding</h5>
+  </div>
+
+  <div class="example-container">
+    <h4>Demonstrate design principles (Contrast, Proximity, Alignment, Hierachy, Wayfinding)</h4>
+    <h5>This page and side navigation for design principles</h5>
+  </div>
+
+  <div class="example-container">
+    <h4>Create a scaling image. shrink page to see img shrink and grow</h4>
+    <section class='implementationOfConceptTwo'>
+      <img src='https://i.pinimg.com/236x/11/2b/74/112b746a2182417b2a947d949798c968.jpg' alt='flower' height='auto' width='20%'>
+    </section>
+  </div>
+
+  <div class="example-container">
+    <h4>Create a start file with the appropiate parts.</h4>
+    <h5>View this HTML file to see appropiate parts.</h5>
+  </div>
+
+  <div class="example-container">
+    <p>also shown in my work repo</p>
+    <ul>
+      <li>media queries: packages/kpi/src/styles.ts</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
