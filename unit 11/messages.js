@@ -1,4 +1,4 @@
-export const data: Task[] = [
+export const data = [
   {
     name: 'Watermelon 1',
     ID: '123',
